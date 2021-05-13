@@ -130,7 +130,7 @@ $max = count($allowed);
 //echo $OUTPUT->single_button(new moodle_url('/mod/tutor/session.php'), $USER->id, 'post');
 
 $chapter_id = $tutor->chapter_id;
-$urlparam = "https://newtutor.venomroms.com?script={$chapter_id}&login=newuser";
+$urlparam = "https://tutor.venomroms.com?script={$chapter_id}&login=newuser";
 echo $OUTPUT->single_button(new moodle_url($urlparam), 'Начать прохождение', 'get');
 
 $obj = $DB->get_records('sessionlog');
